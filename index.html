@@ -18,12 +18,26 @@
             background-color: black;
             overflow: hidden;
         }
-        .top a{
+        .top a.ttl{ 
             text-decoration: none;
             font-size: 35px;
             color: antiquewhite; 
             font-family: "Sofia", sans-serif; 
             margin-left: 10px;
+        }
+        .top .btn{
+          float: right;
+        }
+        .top .btn button{
+          border: none;
+          border-radius: 5px;
+          padding: 7px 16px;
+          background-color: antiquewhite;
+          margin-right: 4px;
+        }
+        .top .btn a{
+          text-decoration: none;
+          color: black;
         }
         .link a{
             float: left;
@@ -60,7 +74,7 @@
             padding: 6px 10px;
             margin-top: 8px;
             margin-right: 16px;
-            background: rgb(185, 176, 176);
+            background: rgb(190, 170, 170);
             font-size: 17px;
             border: none;
             border-radius: 5px;
@@ -76,6 +90,11 @@
 <body>
     <header>
         <div class="top">
+          <a class="ttl" href="#">My Photography</a>
+          <div class="btn">
+            <button><a href="#">SIGN IN</a></button>
+            <button><a href="#">SIGN UP</a></button>
+          </div>
         </div>
         <div class="link">
             <a href="#home">Home</a>
@@ -91,7 +110,6 @@
                 </form>
             </div>
         </div>
-        <hr>
     </header>
     <main>
         <h2 style="text-align: center;">Image Gallery</h2>  
